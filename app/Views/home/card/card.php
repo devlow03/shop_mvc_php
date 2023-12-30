@@ -1,4 +1,4 @@
-<div class="card m-4" style="width: 14em">
+<div class="card m-4" style="width: 15em">
 
 <img src="<?php echo "resources/assets/products/" . $product["image"] . ".webp" ?>" class="card-img-top product-image" alt="...">
 

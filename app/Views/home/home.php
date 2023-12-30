@@ -1,6 +1,14 @@
 <?php
-require "../../Controllers/CategoryController.php";
-require "../../Models/CategoryModel.php";
-require "../../../config/conn.php";
-$categoryController = new CategoryController();
-$categoryController->getCategory();
+$productController = new ProductController();
+$productArray = $productController->getProduct();
+?>
+<div class="container p-5">
+    <div class="row row-cols-5">
+        <?php
+        foreach ($productArray as $product) :
+        require "card/card.php";
+            
+        endforeach;
+        ?>
+    </div>
+</div>
